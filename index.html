@@ -680,13 +680,34 @@ header p {
     <!-- MAIN PROTECTED APPLICATION CONTAINER -->
     <div id="mainAppContainer">
         <header>
-            <div>
-                <h1>COUNCIL FOR THE INDIAN SCHOOL CERTIFICATE EXAMINATIONS</h1>
-                <p>CLASS – IX BOARD EXAMINATION REGISTRATION PORTAL FOR THE ACADEMIC YEAR 2026 – 2027.</p>
-            </div>
-            <div>
-                <button onclick="handleLogout()" class="btn-action" style="padding: 8px 16px; font-size: 10px; background-color: #dc2626;">SECURE LOGOUT</button>
-            </div>
+        <img
+    src="logo.png"
+    draggable="false"
+    oncontextmenu="return false;"
+    ondragstart="return false;"
+    onselectstart="return false;"
+    style="
+        width:125px;
+        height:125px;
+        object-fit:contain;
+        border-radius:50%;
+        background:white;
+        box-shadow:0 0 20px rgba(16,185,129,0.5);
+        display:block;
+        margin:0 auto;
+    ">
+
+            <div style="text-align: center; width: 100%;">
+    <h1>COUNCIL FOR THE INDIAN SCHOOL CERTIFICATE EXAMINATIONS</h1>
+    <p>CLASS – IX BOARD EXAMINATION REGISTRATION PORTAL FOR THE ACADEMIC YEAR 2026 – 2027.</p>
+</div>
+
+<div>
+    <button onclick="handleLogout()" class="btn-action"
+        style="padding: 8px 16px; font-size: 10px; background-color: #dc2626;">
+        SECURE LOGOUT
+    </button>
+</div>
         </header>
 
         <nav id="main-nav">
