@@ -1925,7 +1925,7 @@ function updateMaintenanceUI(){
  const adminWindow=document.getElementById('maintenanceAdminWindow');
  if(publicMessage)publicMessage.textContent=maintenanceSettings.message||DEFAULT_MAINTENANCE_SETTINGS.message;
  if(countdown)countdown.textContent=state.active?formatMaintenanceTime(state.remaining):'SERVICE RESUMED';
- if(windowLabel)windowLabel.textContent=`DAILY MAINTENANCE WINDOW: ${maintenanceSettings.start} – ${maintenanceSettings.end} (LOCAL TIME)`;
+ if(windowLabel)windowLabel.textContent=`DAILY MAINTENANCE WINDOW: ${maintenanceSettings.start} – ${maintenanceSettings.end} (IST)`;
  if(adminStatus)adminStatus.textContent='MAINTENANCE STATUS: '+(state.active?'ACTIVE — PORTAL ACCESS BLOCKED':maintenanceSettings.enabled?'SCHEDULED — PORTAL AVAILABLE':'DISABLED');
  if(adminWindow)adminWindow.textContent=`DAILY WINDOW: ${maintenanceSettings.start} – ${maintenanceSettings.end} · LOCAL DEVICE TIME`;
 
